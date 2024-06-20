@@ -32,7 +32,7 @@ version = "3.1.18"
 features = ["cargo", "derive"]
 optional = true
 
-[target.x86_64-pc-windows-gnu.dependencies]
+[target.'cfg(windows)'.dependencies]
 winreg = "0.10.1"
 windows-service = "0.4.0"
 
